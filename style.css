@@ -1,119 +1,125 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-.wrapper{
-    width: 600px;
-    padding: 2rem;
-    border: 1px solid white;
-    margin:auto;
-    border-radius: 10px;
-    color: aliceblue;
-    display: grid;
-    grid-template-areas: "result result result result"
+h1 {
+  text-align: center;
+  padding: 2rem;
+  color: aliceblue;
+}
+
+.wrapper {
+  width: 600px;
+  padding: 2rem;
+  border: 1px solid white;
+  margin: auto;
+  border-radius: 10px;
+  color: aliceblue;
+  display: grid;
+  grid-template-areas:
+    "result result result result"
     "btn-ac btn-c btn-modulus btn-divide"
     "btn-7 btn-8 btn-9 btn-multiply"
     "btn-4 btn-5 btn-6 btn-minus"
     "btn-1 btn-2 btn-3  btn-plus"
     "btn-0 btn-point btn-equals btn-equals";
-    gap: 1rem;
+  gap: 1rem;
 }
 
-.result{
-    grid-area: result;
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 1.5rem;
-    text-align: right;
+.result {
+  grid-area: result;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 1.5rem;
+  text-align: right;
 }
 
-.btn{
-    border: 1px solid white;
-    border-radius: 10px;
-    text-align: center;
-    padding: 1.5rem;
+.btn {
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1.5rem;
 }
 
-.btn:hover{
-    cursor: pointer;
-    transform: scale(1.1,1.1);
+.btn:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
 }
 
-.btn-ac{
-    grid-area:btn-ac;
+.btn-ac {
+  grid-area: btn-ac;
 }
 
-.btn-c{
-    grid-area:btn-c;
+.btn-c {
+  grid-area: btn-c;
 }
 
-.btn-modulus{
-    grid-area: btn-modulus;
+.btn-modulus {
+  grid-area: btn-modulus;
 }
 
-.btn-7{
-    grid-area: btn-7;
+.btn-7 {
+  grid-area: btn-7;
 }
 
-.btn-8{
-    grid-area: btn-8;
+.btn-8 {
+  grid-area: btn-8;
 }
 
-.btn-9{
-    grid-area: btn-9;
+.btn-9 {
+  grid-area: btn-9;
 }
 
-.btn-multiply{
-    grid-area: btn-multiply;
+.btn-multiply {
+  grid-area: btn-multiply;
 }
 
-.btn-4{
-    grid-area: btn-4;
+.btn-4 {
+  grid-area: btn-4;
 }
 
-.btn-5{
-    grid-area: btn-5;
+.btn-5 {
+  grid-area: btn-5;
 }
 
-.btn-6{
-    grid-area:btn-6;
+.btn-6 {
+  grid-area: btn-6;
 }
 
-.btn-minus{
-    grid-area: btn-minus;
+.btn-minus {
+  grid-area: btn-minus;
 }
 
-.btn-1{
-    grid-area: btn-1;
+.btn-1 {
+  grid-area: btn-1;
 }
 
-.btn-2{
-    grid-area:btn-2;
+.btn-2 {
+  grid-area: btn-2;
 }
 
-.btn-3{
-    grid-area:btn-3;
+.btn-3 {
+  grid-area: btn-3;
 }
 
-.btn-plus{
-    grid-area: btn-plus;
+.btn-plus {
+  grid-area: btn-plus;
 }
 
-.btn-0{
-    grid-area: btn-0;
+.btn-0 {
+  grid-area: btn-0;
 }
 
-.btn-point{
-    grid-area: btn-point;
+.btn-point {
+  grid-area: btn-point;
 }
 
-.btn-equals{
-    grid-area: btn-equals;
+.btn-equals {
+  grid-area: btn-equals;
 }
-
