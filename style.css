@@ -127,7 +127,7 @@ h1 {
 
 @media (width <= 700px) {
   .wrapper {
-    width: 80vw;
+    width: 90vw;
     gap: 0.5rem;
     padding: 1rem;
   }
@@ -138,11 +138,11 @@ h1 {
   }
   
   .btn {
-    width: 6vh;
+    width: 6.5vh;
     padding: 0.7rem;
   }
   .btn-equals {
-    width: 14vh;
+    width: 16.5vh;
     border-radius: 10px;
   }
 }
