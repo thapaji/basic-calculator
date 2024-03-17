@@ -1,6 +1,7 @@
 let stringToDisplay = "";
 let result = document.querySelector('.result');
 const operators = ['%', '*', '/', '+', '-', '='];
+let prevOperator = false;
 
 let arrButtons = document.querySelectorAll('.btn');
 arrButtons.forEach(button => {
@@ -21,10 +22,20 @@ arrButtons.forEach(button => {
             case '/':
             case '%':
             case '*':
-                evaluate();
-            default:
-                stringToDisplay += eventVal;
+                if (operators.includes(eventVal)) {
+                    prevOperator === true ? stringToDisplay = stringToDisplay.slice(0, -1) : prevOperator = true;
+                }
 
+                evaluate();
+                stringToDisplay += eventVal;
+                break;
+            case '.':
+                if(stringToDisplay.includes('.')){
+                    return;
+                }
+            default:
+                prevOperator = false;
+                stringToDisplay += eventVal;
         }
         display();
 
@@ -37,5 +48,8 @@ const display = () => {
 }
 
 const evaluate = () => {
+    if (stringToDisplay === '') {
+        stringToDisplay = 0.0;
+    }
     stringToDisplay = eval(stringToDisplay);
 }
