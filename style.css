@@ -123,3 +123,28 @@ h1 {
 .btn-equals {
   grid-area: btn-equals;
 }
+
+
+@media (width <= 650px) {
+  .wrapper {
+    width: 80vw;
+    gap: 1rem;
+  }
+  
+  .result {
+    grid-area: result;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 1.5rem;
+    text-align: right;
+  }
+  
+  .btn {
+    width: 7vh;
+    padding: 1rem;
+  }
+  .btn-equals {
+    width: 18vh;
+    border-radius: 10px;
+  }
+}
